@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+
+nav {
+    background-color: black;
+    top:0;
+    left:0;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 50px;
+    padding: 10px;
+}
+nav > header{
+    color: white;
+    left:0;
+    font-family: 'Lemon';
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+nav > ul > li{
+    font-family: 'Source Code Pro';
+    color: white;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+}
+nav > ul > li:hover{
+    color: rgba(255, 117, 0, 1);
+}
+#bars {
+    color:white;
+    font-size: 2em;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+@media (min-width: 870px) {
+    #bars {
+        display: none;
+        color:white;
+        font-size: 1.3em;
+    }
+    #nav-links {
+        position: absolute;
+        top:10px;right:0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-right: 10px;
+        font-size: 1em;
+        width: fit-content;
+    }
+    #nav-links > li{
+        padding: 0 4vw;
+    }
+    #dropdown-links {
+        display:none;
+    }
+}
+@media (max-width: 870px) {
+    #nav-links{
+        display: none;
+    }
+    #dropdown-links {
+        text-align: right;
+        margin: 0;
+        position: fixed;
+        list-style: none;
+        right:0;
+        background-color: rgba(255, 255, 255, 0.414);
+        backdrop-filter: blur(10px);
+        height: 100vh; width: auto;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    }
+    #dropdown-links > li {
+        padding: 10px 10px;
+    }
+}

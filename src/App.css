@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin:0;
+  width: 100vw;
+}
+*{
+  font-family: 'Source Code Pro';
+}
+#overflow > *{
+  font-size: 13px;
+}
+/* responsivity */
+#overflow {
+  overflow: none;
+}
+
+
+@keyframes parallax-Effect{
+  to{
+    transform: translateY(calc(var(--parallax-speed)*20px));
+  }
+}
+
+
+.parallax {
+  padding-top: 50px;
+  background-color: rgba(247, 191, 126, 1);
+
+  height: 80vh;
+}
+.parallax > * {
+  animation: parallax-Effect linear;
+  animation-timeline: scroll();
+  z-index: 0;
+}
+#orangeFG {
+  width: 100vw;
+  position: absolute;
+  bottom: 12vh;
+}
+#oranges {
+  background-repeat: no-repeat;
+  align-self: top;
+  position:absolute;
+  left: 13vw;
+  --parallax-speed:10;
+  height: 60vh; width: 60vh;
+}
+
+.parallax > #accent {
+  position: absolute;
+  border-radius: 50%;
+  top: -10vh;
+  left: -5vw;
+  background-color: rgba(93, 152, 101, 1);
+  --parallax-speed: 20;
+}
+
+
+.intro {
+  flex: wrap;
+  max-width: 40vw;
+  color: white;
+  text-shadow: 0 3px 4px drgba(255, 117, 0, 1);
+  font-weight: bold;
+  padding: 20px;
+  align-self:center; right: 5vw;
+  position: absolute;
+  --parallax-speed: 5;
+
+  top: 20vh;
+}
+.intro *{
+  font-size: 3em;
+}
+
+#title{
+  color:black;
+  font-size:3em;
+  font-weight: bold;
+  width:100vw;
+  padding: 3vh 0;
+  text-align: center;
+}
+
+#sub-title{
+  font-size:2em;
+  width:100vw;
+  font-weight: bold;
+  padding: 3vh;
+  text-align: center;
+}
+
+#pfp {
+  border: 2px black dashed;
+  border-radius: 10px;
+  height:min(40vh,40vw);
+}
+.aboutMe > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aboutMe > div > div > #para {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+}
+
+.aboutMe >div > div > i {
+  width: 20vh;
+  height: 20vh;
+}
+
+#para {
+  width: 40vw;
+  padding: 30px 0px;
+}
+
+#icons > *{
+  padding: 0 10px;
+}
+
+
+
+/* LAWS */
+.laws {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100vw;
+  font-family: 'Source Code Pro';
+}
+.laws > #cardDisplay {
+  width:inherit;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10vh 0;
+}
+#cardDisplay > #card {
+  background-image: url('./img/one orange.png');
+  background-position: center center;
+  background-size: contain;
+  width: 20vw;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card > a {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  background-color: rgba(217, 217, 217, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cardDisplay > #card > a > span {
+  width: 10vw;
+  text-align: center;
+}
+#cardDisplay > #card > a > #title {
+  font-size: 1em;
+  padding:0;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+
+#swiperWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  left:50%;
+  position: absolute;
+  transition-timing-function: ease-out;
+}
+
+#swiperWrapper > p {
+  text-align: end;
+}
+
+#swiperWrapper > .swiper-slide{
+  width: 30vw;
+  margin: 20px;
+  border-radius: 10px;
+  border: 2px black dashed;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image{
+  height: 30vh;
+  width: 30vw;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.swiper-slide > div > #title {
+  color:black;
+  font-size:1.5em;
+  padding: 0;
+  padding-top:20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.swiper-slide > div > p {
+  padding:0 30px;
+  color:black
+}
+
+/*responsivity*/
+@media (max-width: 1267px) {
+  body > * {font-size: 8px;}
+
+  #accent {height:400px;width:400px}
+  #oranges {height: 292.5px; width: 292.5px;}
+}
+@media (max-width: 700px) {
+  body > * {font-size: 6px;}
+
+  .parallax{height: 120vh;}
+  .intro {top: 50vh;max-width: 100vw;}
+  #orangeFG{bottom: -28vh;}
+
+  #para{font-size: 0.5em}
+}
+@media (min-width: 1267px){
+  @media (min-height: 1150px) {
+    #accent {height:40vw;width:40vw}
+  }
+  @media (max-height:1150px) {
+    #accent {height:70vh;width:70vh}
+  }
+}
