@@ -51,6 +51,13 @@ function App() {
       <div id='cursor-default'/>
       <div id='overflow'>
         <div class='parallax'>  
+          <div class='header'>
+            <a id='icon'>GABRIEL™</a>
+            <ul id='desc'>
+                <li><a>NO PRESERVATIVES</a></li>
+                <li><a>ALL NATURAL FLAVOUR</a></li>
+            </ul>
+          </div>
           <div id='accent'/>
           <img src={oranges} alt='An image of oranges' id='oranges'/>
           <div class='intro'>
@@ -70,13 +77,7 @@ function App() {
           <div>
             <img alt='A photo of me' src={pfp} id='pfp'></img>
             <div>
-              <span id='para'>Hi! I’m Gabriel Ng, an aspiring web developer. I specialise in html, js, css, which makes me a skilful front-end developer, capable of making a portfolio website in 1 week. Not bad if I do say myself, but I always seek to improve, sharpen my skills and work on my craft.<br/><br/>When I’m not making award-winning websites (nah im not that good), I indulge myself in playing chess, studying, or playing video games.<br/><br/>Check out my socials:</span>
-              <div id='icons'>
-                <i class="fa fa-instagram fa-3x" onClick={handleClick}/>
-                <i class="fa fa-pinterest fa-3x"/>
-                <i class="fa fa-facebook fa-3x"/>
-                <i class="fa fa-whatsapp fa-3x"/>
-              </div>
+              <span id='para'>Hi! I’m Gabriel Ng, an aspiring web developer. I specialise in html, js, css, which makes me a skilful front-end developer, capable of making a portfolio website in 1 week. Not bad if I do say myself, but I always seek to improve, sharpen my skills and work on my craft.<br/><br/>When I’m not making award-winning websites (nah im not that good), I indulge myself in playing chess, studying, or playing video games.<br/></span>
             </div>
           </div>
         </div>
