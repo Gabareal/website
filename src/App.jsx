@@ -79,6 +79,7 @@ function App() {
             <div>
               <span id='para'>
                 Hi! I’m Gabriel Ng, an aspiring web developer. I specialise in html, js, css, which makes me a skilful front-end developer, capable of making a portfolio website in 1 week. Not bad if I do say myself, but I always seek to improve, sharpen my skills and work on my craft.<br/><br/>When I’m not making award-winning websites (nah im not that good), I indulge myself in playing chess, studying, or playing video games.<br/>
+                <br/>
                 Contact me:<br/>
                 HANDPHONE: 87860998<br/>
                 EMAIL: gabrielngyes@gmail.com<br/>
