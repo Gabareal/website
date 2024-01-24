@@ -149,7 +149,7 @@ function App() {
               <img ref={imageRefs} src={img3} class='card-image' draggable='false'/>
               <div>
                 <span id='title'>Perse Coding Competition</span>
-                <p>Hosted by SST, I won a participation award in Perse Coding Competition, as I did not account for user input.<br/>However, I am willing to learn from my mistakes.</p>
+                <p>Hosted by SST, I won a participation award in Perse Coding Competition.</p>
               </div>
             </card>
             
