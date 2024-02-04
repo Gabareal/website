@@ -85,10 +85,6 @@ function App() {
           <img src={oranges} alt='An image of oranges' id='oranges'/>
           <div className="footer_text">
             <h>&#169; Copyright Not Impending | Property of Gabriel Ng Kai Jun</h>
-            <p>Check out my projects and businesses!</p>
-            <ul className="footer_linksContainer">
-              <li><a href="https://portfolio-business-rouge.vercel.app">PortfolioPros</a></li>
-              <li><a href="https://coursework-website-v2.vercel.app">Lost and found database</a></li>
             </ul>
           </div>
         </div>
